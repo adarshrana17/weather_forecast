@@ -22,3 +22,6 @@ The current weather and five-day forecast will be displayed.
 ### Getting weather for your current location:
 Click the "Get Current Location" button. The app will request permission to access your location.
 Once granted, it will fetch and display the weather data for your current location.
+
+
+
