@@ -7,5 +7,5 @@
 }
 
  .fivedayforecast{
-    @apply mt-2 mb-2 border p-1 rounded bg-gray-500 text-white h-36;
+    @apply mt-2 mb-2 border p-1 rounded bg-gray-500 text-white;
 } 

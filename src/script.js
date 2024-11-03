@@ -23,7 +23,7 @@ const fetchdefault = await fetch(default_url+ `&appid=${default_key}`);
 const defaultdata = await fetchdefault.json();
 
    document.getElementById("city").innerHTML=`${defaultdata.name} (${newdate.getFullYear()}-${newdate.getMonth()}-${newdate.getDate()})`;
-   document.getElementById("temp").innerHTML="Temperature: " + Math.round(defaultdata.main.temp) +"°C" ;
+   document.getElementById("temp").innerHTML="Temp: " + Math.round(defaultdata.main.temp) +"°C" ;
    document.getElementById("wind").innerHTML="Wind: "+defaultdata.wind.speed +" km/h";
    document.getElementById("humidity").innerHTML="Humidity: "+defaultdata.main.humidity +"%";
    document.getElementById("weather").innerHTML ="Weather: "+defaultdata.weather[0].main;
@@ -182,7 +182,7 @@ async function searchweather(city) {
     const data = await fetchdata.json();
 
     document.getElementById("city").innerHTML=`${data.name} (${newdate.getFullYear()}-${newdate.getMonth()}-${newdate.getDate()})`;
-    document.getElementById("temp").innerHTML="Temperature: " + Math.round(data.main.temp) +"°C" ;
+    document.getElementById("temp").innerHTML="Temp: " + Math.round(data.main.temp) +"°C" ;
     document.getElementById("wind").innerHTML="Wind: "+data.wind.speed +" km/h";
     document.getElementById("humidity").innerHTML="Humidity: "+data.main.humidity +"%";
     document.getElementById("weather").innerHTML ="Weather: "+data.weather[0].main;
@@ -306,7 +306,7 @@ async function getData(latitude,longitude){
    
    const ucldata = await ucl.json() ;
    document.getElementById("city").innerHTML=`${ucldata.name} (${newdate.getFullYear()}-${newdate.getMonth()}-${newdate.getDate()})`;
-   document.getElementById("temp").innerHTML="Temperature: " + Math.round(ucldata.main.temp) +"°C" ;
+   document.getElementById("temp").innerHTML="Temp: " + Math.round(ucldata.main.temp) +"°C" ;
    document.getElementById("wind").innerHTML="Wind: "+ucldata.wind.speed +" km/h";
    document.getElementById("humidity").innerHTML="Humidity: "+ucldata.main.humidity +"%";
    document.getElementById("weather").innerHTML ="Weather: "+ucldata.weather[0].main;
