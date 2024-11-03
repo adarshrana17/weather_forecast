@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.weather-box{
+    @apply h-40 w-1/4 bg-gray-500 rounded border-2 text-white p-1;
+}
+
+ .fivedayforecast{
+    @apply mt-2 mb-2 border p-1 rounded bg-gray-500 text-white h-36;
+} 
